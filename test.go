@@ -13,6 +13,7 @@ func main() {
 	var num int
 	fmt.Print("num:")
 	fmt.Scanln(&num)
+	hap(1, 2)
 
 	if num == 1 {
 		os.Remove("sqlite-database.db") //파일 중복 확인
@@ -97,5 +98,7 @@ func displayStudents(db *sql.DB) {
 		row.Scan(&id, &code, &program, &name) //컬럼 순서에 맞춰줘야 함
 		//출력위치 설정
 		log.Println("Student: ", code, " ", program, " ", name, " ", id)
+
 	}
+
 }
