@@ -8,5 +8,6 @@ func asd() {
 	fmt.Println("dasdasdsa")
 	fmt.Println("dasdasdsa")
 	fmt.Println("dasdasdsa")
+	fmt.Println("qqwq")
 
 }
